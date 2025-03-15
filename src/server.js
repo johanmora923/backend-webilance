@@ -25,7 +25,7 @@ console.log("servidor corriendo", app.get("port"));
 
 // Configuración de CORS
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://webbilance.vercel.app"], // Permitir solicitudes desde estos orígenes
+    origin: "https://webbilance.vercel.app",// Permitir solicitudes desde estos orígenes
     methods: "GET, POST", // Métodos permitidos
     credentials: true, // Permitir el uso de cookies
 };
@@ -33,7 +33,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173, https://webbilance.vercel.app");
+    res.setHeader("Access-Control-Allow-Origin", "https://webbilance.vercel.app");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
     res.setHeader("Access-Control-Allow-Credentials", "true");
