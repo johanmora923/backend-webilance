@@ -25,7 +25,7 @@ console.log("servidor corriendo", app.get("port"));
 
 // Configuración de CORS
 const corsOptions = {
-    origin: ["http://localhost:5173","https://webbilance.vercel.app" ],// Permitir solicitudes desde este origen
+    origin: ["http://localhost:5173", "https://webbilance.vercel.app"], // Permitir solicitudes desde estos orígenes
     methods: "GET, POST", // Métodos permitidos
     credentials: true, // Permitir el uso de cookies
 };
